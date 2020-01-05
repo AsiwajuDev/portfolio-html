@@ -15,7 +15,7 @@ TxtType.prototype.tick = function() {
   if (this.isDeleting) {
     this.txt = fullTxt.substring(0, this.txt.length - 5);
   } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 4);
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
   this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
