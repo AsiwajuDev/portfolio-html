@@ -15,7 +15,7 @@ TxtType.prototype.tick = function() {
   if (this.isDeleting) {
     this.txt = fullTxt.substring(0, this.txt.length - 5);
   } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
+    this.txt = fullTxt.substring(0, this.txt.length + 4);
   }
 
   this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
@@ -51,8 +51,8 @@ window.onload = function() {
     }
   }
   // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-  document.body.appendChild(css);
+  // var css = document.createElement("style");
+  // css.type = "text/css";
+  // css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+  // document.body.appendChild(css);
 };
