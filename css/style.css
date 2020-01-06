@@ -37,6 +37,11 @@ body {
   text-align: center;
 }
 
+#image {
+  position: relative;
+  top: -10px;
+}
+
 h2 {
   text-transform: capitalize;
   font-size: 50px;
@@ -61,22 +66,42 @@ h3 {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 1300px) {
+  #image {
+    position: relative;
+    top: -300px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   h2 {
     font-size: 40px;
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 450px) {
   h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   h1::after {
     height: 8px;
   }
 }
 
-@media only screen and (max-width: 100px) {
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: 25px;
+  }
+  h1::after {
+    height: 8px;
+  }
+  #image {
+    position: relative;
+    top: -150px;
+  }
+}
+
+/* @media only screen and (max-width: 100px) {
   #intro {
     padding: 0 10px;
   }
@@ -101,4 +126,4 @@ h3 {
   h1::after {
     height: 4px;
   }
-}
+} */
