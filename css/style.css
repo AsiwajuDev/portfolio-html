@@ -39,7 +39,7 @@ body {
 
 #image {
   position: relative;
-  top: -10px;
+  /* top: -10px; */
 }
 
 h2 {
