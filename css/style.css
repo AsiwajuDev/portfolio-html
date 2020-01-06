@@ -37,11 +37,6 @@ body {
   text-align: center;
 }
 
-#image {
-  position: relative;
-  top: -60px;
-}
-
 h2 {
   text-transform: capitalize;
   font-size: 50px;
